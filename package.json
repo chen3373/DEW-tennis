@@ -1,0 +1,22 @@
+{
+  "name": "dew-tennis",
+  "version": "1.0.0",
+  "description": "Pruebas con clases en un ejercicio de tenis",
+  "main": "index.js",
+  "scripts": {
+    "test": "Jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen3373/DEW-tennis.git"
+  },
+  "author": "Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chen3373/DEW-tennis/issues"
+  },
+  "homepage": "https://github.com/chen3373/DEW-tennis#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

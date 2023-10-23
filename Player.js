@@ -1,10 +1,15 @@
 class Player{
     name;
     ranking;
-    constructor(name, ranking) {
+    #gender;
+    constructor(name, ranking= 0, gender = 'female') {
         this.name = name;
         this.ranking = ranking;
+        if(gender=='male') this.#gender = 'male';
+        else this.#gender = 'female';
     }
+
+    get gender(){return this.#gender;}
 }
 
 // // Esto son pruebas (ELIMINAR A PARTIR DE AQUI)

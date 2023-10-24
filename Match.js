@@ -11,14 +11,23 @@ class Match {
             this.date = new Date([year, month, day].join('/'));
         }
     }
+    getDate() {
+        const day = this.date.getDate().toString().padStart(2, '0');
+        const month = (this.date.getMonth() + 1).toString().padStart(2, '0');
+        const year = this.date.getFullYear();
+        return `${day}/${month}/${year}`;
+    }
 
     addPlayer(player) {
         if (this.players.length >= 2) return false;
-        
+
         this.players.push(player);
         return true;
     }
 
+    getWinner(){
+        return this.winner;
+    }
     setWinner(player) {
         if (this.players.includes(player)) {
             if (this.date < (new Date())) {

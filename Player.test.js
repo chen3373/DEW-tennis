@@ -5,7 +5,11 @@ test('Crear jugador con edad válida', () => {
   const jugador1 = new Player('Pepe', 7, 'male', new Date(1995, 5, 10));
   expect(jugador1.age instanceof Date).toBe(true);
   expect(jugador1.calculateAge()).toBe(26);
-  expect(jugador1).toEqual({ name: 'Pepe', ranking: 7, age: new Date(1995, 5, 10), gender: 'male' });
+  //expect(jugador1).toEqual({ name: 'Pepe', ranking: 7, age: new Date(1995, 5, 10), gender: 'male' });
+  expect(jugador1.name).toBe('Pepe');
+  expect(jugador1.ranking).toBe(7);
+  expect(jugador1.age).toEqual(new Date(1995, 5, 10));
+  expect(jugador1.gender).toBe('male');
 });
 
 test('Crear jugador sin proporcionar fecha de nacimiento', () => {

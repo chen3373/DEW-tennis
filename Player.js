@@ -16,7 +16,6 @@
 //   this.age = age;
 // }
 //   }
-
 //   calculateAge() {
 //     const now = new Date();
 //     const ageDate = new Date(this.age);
@@ -29,22 +28,16 @@
 //     return age;
 //   }
 
-//   get gender() { return this.#gender; }
+//     get gender() { return this.#gender; }
 
-//   get category() {
-//     const age = this.calculateAge();
-
-//     if (age < 12) {
-//       return 'Benjamin';
-//     } else if (age >= 12 && age <= 15) {
-//       return 'Cadet';
-//     } else if (age >= 16 && age <= 19) {
-//       return 'Junior';
-//     } else {
-//       return 'Senior';
-//     }
+//   
+//     get category(){
+//     if(this.age < 12) return "Benjamin";
+//     if(this.age <= 15) return "Cadet"; 
+//     if(this.age <= 19) return "Junior";
+//     return "Senior"; 
 //   }
-// }
+// // }
 
 // // // Esto son pruebas (ELIMINAR A PARTIR DE AQUI)
 
